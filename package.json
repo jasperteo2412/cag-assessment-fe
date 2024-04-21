@@ -1,9 +1,7 @@
 {
-  "name": "react-typescript-starter",
-  "description": "Minimalist React 18 starter template with TypeScript ⚛",
-  "version": "1.0.0",
+  "name": "cag-assessment-fe",
+  "version": "0.0.1",
   "main": "src/index.tsx",
-  "repository": "https://github.com/GR34SE/react-typescript-starter.git",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
