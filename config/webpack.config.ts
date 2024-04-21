@@ -7,6 +7,11 @@ import {TsconfigPathsPlugin} from "tsconfig-paths-webpack-plugin";
 module.exports = {
     entry: "./src/index.tsx",
     devtool: false,
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000,
+    },
     resolve: {
         extensions: [".ts", ".tsx", ".js"],
         plugins: [new TsconfigPathsPlugin()]
