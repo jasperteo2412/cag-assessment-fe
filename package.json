@@ -5,11 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --config config/webpack.local.config.ts --port 8080",
-    "start:qa": "webpack serve --config config/webpack.qa.config.ts",
     "start:prod": "webpack serve --config config/webpack.prod.config.ts",
     "develop": "webpack-cli serve --mode=development --env development --open --hot",
     "build": "webpack --config config/webpack.local.config.ts",
-    "build:qa": "webpack --config config/webpack.qa.config.ts",
     "build:prod": "webpack --config config/webpack.prod.config.ts",
     "test": "jest",
     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
@@ -46,7 +44,10 @@
     "webpack-dev-server": "4.15.1"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "dotenv-webpack": "^8.1.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "webpack-merge": "^5.10.0"
   }
 }
