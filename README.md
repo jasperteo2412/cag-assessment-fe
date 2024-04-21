@@ -1,7 +1,7 @@
 # Inventory Management Frontend (cag-assessment-fe)
 This is a ReactJS Typescript project, for an inventory management system.
 
-##Set up
+## Set up
 To set up this project locally, you would have to clone the repository and run the following commands in your terminal/command line in the project directory:
 > npm install
 
