@@ -35,6 +35,10 @@ export default function UrlRoutesContent(){
                         <span>Search</span>
                         <Link to="/search" />
                     </Menu.Item>
+                    <Menu.Item key="/search/date" onClick={() => {setMenuKey('/search/date')}}>
+                        <span>Search By Date</span>
+                        <Link to="/search/date" />
+                    </Menu.Item>
                 </Menu>
             </Header>
             {element}
