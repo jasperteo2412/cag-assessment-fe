@@ -1,4 +1,4 @@
-import { Card, Col, Form, Row, Spin } from "antd";
+import { Alert, Card, Col, Form, Row, Spin } from "antd";
 import Table, { ColumnsType } from "antd/es/table";
 import React, { useEffect, useState } from "react";
 import { filterCategory, getCategoryList } from "./components/Functions.LandingPage";
@@ -79,6 +79,20 @@ export default function ViewItemsCard(props: any){
 
     return(
         <>
+            { error?
+                <Alert
+                    message={"Error"}
+                    description={"An error has ocurred, unable to load data"}
+                    type={"error"}
+                    showIcon
+                    closable
+                    style={{
+                        marginBottom: '10px'
+                    }}
+                />
+                :
+                undefined
+            }
             <Card
                 title="List of Inventory Categories"
                 bordered={false}
