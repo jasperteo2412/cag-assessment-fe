@@ -19,7 +19,7 @@ export default function UrlRoutesContent(){
     }, [location, menuKey]);
 
     return(
-        <Content style={{height: '100vh', paddingBottom: 0}}>
+        <Content style={{height: 'fit-content', paddingBottom: 0}}>
             <Header style={{ display: 'top', alignItems: 'center' }}>
                 <Menu
                 theme="dark"
