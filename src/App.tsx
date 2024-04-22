@@ -1,6 +1,14 @@
+import { Layout } from "antd";
 import React from "react";
-import HelloWorld from "components/HelloWorld";
+import UrlRoutesContent from "./services/UrlRoutesContent";
+import { HashRouter } from "react-router-dom";
 
-const App: React.FC = () => <HelloWorld />;
-
-export default App;
+export default function App(){
+    return(
+        <HashRouter>
+            <Layout>
+                <UrlRoutesContent/>
+            </Layout>
+        </HashRouter>
+    )
+};
