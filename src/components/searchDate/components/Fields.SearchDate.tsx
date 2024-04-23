@@ -1,5 +1,5 @@
 import React from "react";
-import { DatePicker, Form, Input } from "antd";
+import { DatePicker, Form } from "antd";
 
 export function SearchDateStart(props: any){
 
@@ -9,6 +9,12 @@ export function SearchDateStart(props: any){
         <Form.Item
             name="startDate"
             label={<label> Date From </label>}
+            rules={[
+                {
+                    required: true,
+                    message: 'Date is required'
+                }
+            ]}
             style={{marginRight: "10px"}}
         >
             <DatePicker
@@ -29,6 +35,12 @@ export function SearchDateEnd(props: any){
         <Form.Item
             name="endDate"
             label={<label> Date To </label>}
+            rules={[
+                {
+                    required: true,
+                    message: 'Date is required'
+                }
+            ]}
         >
             <DatePicker
                 name="endDate"

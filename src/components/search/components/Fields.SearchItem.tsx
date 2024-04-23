@@ -26,10 +26,13 @@ export function SearchItemLowestPrice(props: any){
     const { priceRange, setPriceRange } = props;
 
     function handleChange(event: any){
-        const { name, value } = event.target;
+        const { value } = event.target;
         const tempRange = priceRange;
         if(value.length > 0){
             tempRange[0] = parseFloat(value);
+        }
+        else{
+            tempRange[0] = 0;
         }
         setPriceRange(tempRange);
     }
@@ -56,10 +59,13 @@ export function SearchItemHighestPrice(props: any){
     const { priceRange, setPriceRange } = props;
 
     function handleChange(event: any){
-        const { name, value } = event.target;
+        const { value } = event.target;
         const tempRange = priceRange;
         if(value.length > 0){
             tempRange[1] = parseFloat(value);
+        }
+        else{
+            tempRange[0] = 0;
         }
         setPriceRange(tempRange);
     }

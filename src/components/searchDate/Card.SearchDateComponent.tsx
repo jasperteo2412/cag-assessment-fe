@@ -67,9 +67,12 @@ export default function SearchDateComponentCard(){
 
     function handleSearch(){
         setLoading(true);
-
-        const args = [formData, setData, setSuccess, setError, setTotalPrice];
-        filterDateSearch(...args);
+        form.validateFields().then((value: any) =>{
+            const args = [formData, setData, setSuccess, setError, setTotalPrice];
+            filterDateSearch(...args);
+        }).catch((error: any) => {
+            setError(true);
+        })
     }
 
     useEffect(()=>{

@@ -167,6 +167,7 @@ export default function SearchComponentCard(){
             handleSearch();
             setReloadTable(false);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [reloadTable]);
 
     return(
